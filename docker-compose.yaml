@@ -1,0 +1,7 @@
+services:
+  furigana:
+    image: oven/bun:latest
+    command: bun --hot index.html --host=0.0.0.0:80
+    working_dir: /app
+    volumes: 
+      - ./:/app
